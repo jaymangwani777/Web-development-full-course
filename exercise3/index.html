@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --color: rgb(245, 104, 104);;
+      --boxes-bg-color: rgb(253, 248, 242);
+      --navbar-bg-color: rgb(32, 32, 32);
+      --intro-bg-color: rgb(32, 32, 32);
+      --introtext-color:rgb(245, 104, 104);
+      --fotter-color:rgb(245, 104, 104);
+      --fotter-bg-color: rgb(32, 32, 32);
+    }
+    /* header{
+      position: sticky;
+      top: 0;
+    } */
+
+
+    .nav {
+      position: fixed;
+      /* border: 1px solid white; */
+      /* top: 0;
+      left: 0px;
+      z-index: 1;*/ }
+     
+
+
+    .nav ul :hover {
+      color: rgb(253, 69, 69);
+    }
+    .nav ul {
+      list-style: none;
+      display: flex;
+      /* justify-content: center; */
+      /* background-color: rgb(245, 104, 104); */
+      cursor: pointer;
+    }
+    .nav li {
+      padding: 20px;
+      font-size: xx-large;
+      /* border: 1px solid white; */
+      width: 226px;
+      text-align: center;
+      color: var(--color);
+      /* color: rgb(245, 104, 104); */
+       background-color:var(--navbar-bg-color);
+      /* background-color: rgb(32, 32, 32); */
+      font-family:"Bebas Neue", sans-serif;
+    }
+    .boxes {
+      display: flex;
+      /* border: 1px solid rgb(3, 3, 3); */
+      /* background-color: rgb(253, 248, 242); */
+      background-color: var(--boxes-bg-color); 
+      height: 550px;
+      width: 1400px;
+      justify-content: center;
+      padding: 80px 0px 0px;
+    }
+    .box {
+      border: 2px solid black;
+      height: 422px;
+      width: 550px;
+      margin: 33px 25px;
+    }
+    .box img{
+      height: 422px;
+      width: 550px;
+    }
+    .intro {
+      border: 2px solid black;
+      border-radius: 110px;
+      margin: 40px 80px;
+      text-align: center;
+      font-size: 71px;
+      height: 210;
+      width: 1150px;
+      /* background-color: rgb(32, 32, 32); */
+      background-color: var(--intro-bg-color);
+    }
+    .introtext {
+      padding: 26px 0px;
+      font-family: "Bebas Neue", sans-serif;
+      /* color: rgb(244, 68, 68); */
+      color:var(--introtext-color)
+    }
+    .footer{
+      text-align: center;
+      /* border: 1px solid black; */
+      width: 1340px;
+      padding: 30px;
+      margin-bottom: 10px;
+      font-size: larger;
+      /* color: rgb(244, 68, 68);
+      background-color: rgb(32, 32, 32); */
+      color: var(--fotter-color);
+      background-color: var(--fotter-bg-color);
+      font-family: "Bebas Neue", sans-serif;
+          }
+  </style>
+  <body>
+    <header>
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Clients</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <img src="/dce82-16995363020819-1920.avif" alt="" />
+        </div>
+        <div class="box">
+          <img src="/jujutsu-kaisen-sukuna-wallpaper-1366x768_46.jpg" alt="" />
+        </div>
+      </div>
+      <div class="intro">
+        <div class="introtext">
+          Welcome to this Sigma Web Development Express
+        </div>
+      </div>
+      <!-- <div class="logo">
+      <img src="/draw_svg20211224-8647-1vc0v11.svg.png" alt="">
+    </div> -->
+    </header>
+    <footer>
+      <div class="footer">
+        <div class="foot">COPYRIGHT &copy;-2023</div>
+      </div>
+    </footer>
+  </body>
+</html>

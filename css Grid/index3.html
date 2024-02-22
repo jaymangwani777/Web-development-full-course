@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css grid part 3</title>
+  </head>
+  <style>
+    .container {
+      border: 2px solid black;
+      display: grid;
+      grid-template-rows: repeat(4, 100px);
+      grid-template-columns: repeat(4, 1fr);
+      /* grid-template-areas: 
+      'header header'
+      'main aside'
+      'footer footer'; */
+      /* we can asign sections inside the grid by providing the grid area property */
+      justify-items: start;
+      align-items: end;
+      /* we can use flex properties inside of the grid too! */
+      grid-gap: 0px 0px;
+    }
+    /* grid-template-rows: 100px 100px;
+        grid-template-columns: 100px  minmax(100px,3fr) 1fr ; */
+    /* you can give values other than px like fr 1fr 2fr 3fr you can use minmax function it will help you to remain the size of the item as same as it is defined (when you shrink it) minmax() min means minimum and max means maximum  */
+
+    /* you can add gap to the column and rows by using gap property first value is for columns and the second value is for rows! */
+
+    .item {
+      border: 2px solid orange;
+      height: 55px;
+      width: 55px;
+    }
+    .item1 {
+      /* grid-area: header ; */
+    }
+    .item2 {
+      /* grid-area: main ; */
+    }
+    .item3 {
+      /* grid-area: aside ; */
+    }
+    .item4 {
+      /* grid-area: footer ; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+    </div>
+  </body>
+</html>

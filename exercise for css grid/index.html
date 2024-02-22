@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultraedit layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      /* flex-wrap: wrap; */
+    }
+    .navlogo img {
+      width: 165px;
+    }
+    nav {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 130px;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+      cursor: pointer;
+      flex-wrap: wrap;
+    }
+    nav ul :hover {
+      color: gray;
+    }
+    .container {
+      display: grid;
+      justify-content: center;
+      margin-top: 20px;
+      /* align-items: center; */
+      grid-template-columns: repeat(3,275px);
+      grid-template-rows: repeat(5, 150px);
+      grid-gap: 30px 30px;
+      /* flex-wrap: wrap; */
+    }
+    .mainhead {
+      font-size: larger;
+      margin-top: 48px;
+      text-align: center;
+    }
+    .mainhead :nth-child(2){
+      font-size: 14px;
+    }
+    .languagename {
+      font-size: 13px;
+      padding-top: 11px;
+    }
+    .item {
+      padding-top: 13px;
+      font-size: larger;
+      text-align: center;
+      /* border: 1px solid black; */
+      background-color: rgb(249, 247, 247);
+      /* margin: 2px; */
+    }
+    .item1 {
+    }
+    .btn {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 53px;
+    }
+    .btn a {
+      color: white;
+      font-size: small;
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 6px 10px;
+      font-weight: bolder;
+      border-radius: 4px;
+      background-color: #5cb85c;;
+      cursor: pointer;
+    }
+    .btn  :first-child{
+      background-color: #00b6d1;;
+    }
+    .btn2{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 23px;
+    }
+    .btn2 a {
+      color: white;
+      font-size: small;
+      text-decoration: none;
+      /* border: 1px solid black; */
+      padding: 6px 10px;
+      font-weight: bolder;
+      border-radius: 4px;
+      background-color: #5cb85c;;
+      cursor: pointer;
+    }
+    .btn2  :first-child{
+      background-color: #00b6d1;;
+    }
+    .heading {
+      text-align: center;
+      font-size: xxx-large;
+      padding-top: 60px;
+    }
+    /* .text {
+      text-align: center;
+      font-size: 26px;
+      padding: 25px 0px;
+    }
+    .btn3 {
+      text-align: center;
+    }
+    .btn3 button {
+      border: 1px solid white;
+      color: white;
+      background-color:  #00b6d1;
+      position: relative;
+      bottom: -47px;
+      font-size: 14px;
+      padding: 15px;
+      border-radius: 7px;
+      font-weight: bold;
+    } */
+    @media screen and (max-width: 979px) {
+      .container {
+      display: grid;
+      justify-content: center;
+      margin-top: 20px;
+      grid-template-columns: 275px ;
+    } 
+      
+    }
+    
+  </style>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="navlogo">
+          <img src="/UE-Logo-1.webp" alt="" />
+        </div>
+
+        <ul>
+          <li>Products &#x21e9;</li>
+          <li>Pricing &#x21e9;</li>
+          <li>Resources &#x21e9;</li>
+          <li>About us &#x21e9;</li>
+          <li>Security and complaince &#x21e9;</li>
+          <li><img src="/Screenshot (8).png" alt="" /></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!-- <div class="heading">
+          Download <strong> Ultraedit</strong> for Windows
+          <img src="/Reviews.png" alt="  " />
+        </div>
+        <div class="text">
+          Download and try Ultraedit before you buy it! This download includes
+          the full windows
+          <div id="line2">version of text editor.</div>
+          <div class="btn3">
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+          </div>
+      </section>     -->
+      <div class="mainhead">
+       <span>   Download <strong> UltraEdit </strong></span> <span>  v2023.2(released 2023/12/15) |
+        Hotfix </span>
+      </div>
+      <div class="container">
+        <div class="item item1">
+          <strong> English </strong>
+
+          <div class="btn">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item2">
+          <strong> Deutsch </strong>
+          <div class="languagename">German</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item3">
+          <strong> Italiano</strong>
+          <div class="languagename">Italian</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item4">
+          <strong> Español</strong>
+          <div class="languagename">Spanish</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item5">
+          <strong> français </strong>
+          <div class="languagename">French</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item6">
+          <strong> Português brasileiro</strong>
+          <div class="languagename">Brazilian Portuguese</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item7">
+          <strong> 日本</strong>
+          <div class="languagename">Japanese</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item8">
+          <strong> 한국어</strong>
+          <div class="languagename">Korean</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item9">
+          <strong> 中国</strong>
+          <div class="languagename">Chinese</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+        <div class="item item10">
+          <strong> 中國 </strong>
+          <div class="languagename">Traditional Chinese</div>
+          <div class="btn2">
+            <a href="/ue_english_64.exe" target="_blank">Download 32-bit</a>
+            <a href="/ue_english_64.exe" target="_blank">Download 64-bit</a>
+            <!-- <button>Download 32-bit</button>
+            <button>Download 64-bit</button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

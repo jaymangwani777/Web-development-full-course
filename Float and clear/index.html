@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css Float and clear</title>
+  </head>
+  <style>
+    img {
+      float: right;
+    }
+    /* float can help if you want to move the image or text to the first right corner or first left corner  */
+    .cards {
+      border: 2px solid black;
+      display: flow-root;
+    }
+    .card {
+      border: 2px solid red;
+    }
+    .cards :nth-child(4){
+        clear: right;
+        /* clear:right means that now the text is not gonna allow the image if it is floating right side of it in the same way you can use clear: left and in the same way if you dont want to allow image anyside of the text you can use clear:both */
+    }
+  </style>
+  <body>
+    <div class="cards">
+      <img
+        src=" https://st.depositphotos.com/1224365/2408/i/450/depositphotos_24084839-stock-photo-portrait-of-a-normal-boy.jpg"
+        alt=""
+        width="200"
+      />
+      <div class="card">
+        Card1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem
+        obcaecati, provident eveniet sint veniam tenetur incidunt vel quod eius
+        odio ducimus nulla facilis eligendi neque quibusdam sed, esse suscipit
+        vitae. Ut, neque.
+      </div>
+      <div class="card">Card2</div>
+      <div class="card">Card3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, praesentium nesciunt in illo, suscipit aliquam veniam atque non repellendus voluptatibus dolor pariatur molestias quas numquam quisquam iste est iure ducimus nobis obcaecati ex asperiores id consectetur. Excepturi nisi perferendis, dolorum iste atque voluptas consequatur aliquam, repellendus sed molestias aut magni neque. Et placeat rerum aliquam. Sint debitis suscipit in exercitationem excepturi, corrupti id neque! Corporis fugit pariatur veniam dicta assumenda quaerat alias ut, explicabo eveniet voluptate et unde voluptatibus animi cum nobis consequuntur, possimus quidem. Deserunt, doloremque non nesciunt, sit, libero vero impedit consequuntur explicabo quasi facere dolore asperiores. Praesentium earum suscipit porro perspiciatis omnis assumenda voluptate laborum, id iure nisi, sed cupiditate minus libero? Consectetur necessitatibus porro rerum quasi, magnam delectus nesciunt dignissimos tempora! Dolorem distinctio quam sed nobis vitae aliquid dolorum quae quaerat expedita eos voluptate qui officiis soluta nesciunt, tempore, ad incidunt laboriosam voluptas, commodi rerum fugit fuga? Dolorem architecto doloribus aut sint aliquam accusamus libero, sit voluptates pariatur officia! Voluptatum doloribus itaque corrupti quidem nam nesciunt, consequatur eum magnam distinctio magni tempore animi sunt odit, ab obcaecati reprehenderit labore debitis aliquam maxime at laudantium fugit quisquam. Sunt maiores officia eius necessitatibus cum tempora eaque, commodi obcaecati neque tenetur, magni adipisci pariatur dolore quos ipsa laborum facilis, voluptatum reprehenderit ea perspiciatis. Illo quo perspiciatis illum at explicabo ipsum laudantium tempore adipisci, eius enim odit provident quod suscipit optio repudiandae cupiditate atque sequi minima nihil ab ullam velit consequatur? Eius, sint, fuga labore consectetur officia eos dolorem assumenda quis quasi, a pariatur suscipit. Dolor temporibus non quae molestiae adipisci dignissimos quo atque ipsam vero pariatur? Quod nihil deleniti eveniet quos repudiandae pariatur distinctio a asperiores sunt! Dolorum a eius distinctio velit, doloribus ad amet magni nobis fuga eaque facilis similique quidem quasi hic. Harum animi itaque, asperiores ipsam minus maxime doloribus corporis dignissimos enim, culpa quis necessitatibus tempora facilis, optio veniam. Exercitationem quidem possimus unde? Est numquam totam, delectus dignissimos, eos nemo sapiente animi eius impedit dicta eveniet aliquid, consequuntur quos.</div>
+    </div>
+  </body>
+</html>

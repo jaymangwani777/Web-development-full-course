@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on css selectors</title>
+  </head>
+  <style>
+    /* .boxes {
+      color: blue;
+      border: 1px solid black;
+    } */
+
+    /* .box {
+      border: 1px solid black;
+    } */
+
+    /* .boxes:first-line {
+      color: red;
+    } */
+    /* by writing this you can target first line of the parent container */
+
+    /* p,
+    a,
+    .box,
+    [data-color="primary"] {
+      margin-top: 20px;
+    } */
+
+    /* data color primary is an another selector you can write that p is paragraph a are a tags .box is box class by writing that syntax you can target group of selectors */
+
+    /* .box:nth-child(odd){
+        background-color: blue;
+    } */
+
+    /* you can select elements on the basis of even odd also for example in this selector w've wrote nth-child(odd) we can write nth child(even) also. */
+ .boxes::before{
+  content: 'jay is fucking awsome';
+  color: purple;
+ }
+ .boxes::after{
+  content: 'jay is fucking awsome';
+  color: burlywood;
+ }  
+/* these before and after css psuedo elements not selectors used dynamicly in css it is very important when you forgot to add some text you can add some text with the help of boxes: before and boxes: after it is very important! */
+
+::selection{
+  color: blue;
+  background-color: black;
+ }
+/* this selection element will define the text selection for the user like it will define the color of the text you can use this when you are creating your web application color of the text selection background color of a text selection it will define it ::selection element!
+ */
+  .box::first-letter{
+    color: red;
+    font-size:xx-large
+  }
+/* you can use this first letter element too when you have to change your first letter of the text it will help you for sure these little things are very important! */
+input::placeholder{
+  color: blue;
+  background-color: rgb(240, 223, 223);
+}
+/* input{
+  color: red;
+} */
+
+  </style>
+  <body>
+    <div class="boxes">
+      <div class="box">Hey i am a box</div>
+      <div data-color="primary" class="box">Hey i am a box</div>
+      <div class="box">Hey i am a box</div>
+       <input type="text"  placeholder="Type your name here">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variables</title>
+  </head>
+  <style>
+    :root {
+      --color: rgb(192, 192, 235);
+      --seccolor: rgb(136, 136, 239);
+      --dafpad:30px;
+      --dafmargin:20px;
+    }
+    /* This is a globall variable */
+    
+    /* these are css variables which are used to change color of the website with the help of css variables you can easily change color of the whole theme you do not have to change it perticulary you just have to put var(--color); or var(--seccolor); under the css of the div for that you have to alocate colors globally which you have to write under root */
+
+    /* the question is What is the actual use of css variables if your website is using same color multiple times you cannot change that color one by one you have to use css variables to make your work easy! */
+
+    /* you can use other properties too in css variables like margin padding opacity  */
+    /* opacity is for darkness or lightness of the text */
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    .nav {
+      background-color: var(--color);
+    }
+
+    .container {
+      margin: var(--dafmargin);
+      background-color: var(--seccolor);
+      /* --color: rgb(126, 126, 144); */
+    }
+    
+    ul {
+      display: flex;
+      /* border: 1px solid var(--seccolor); */
+      /* you can use color variables for giving borders also */
+    }
+
+    ul li {
+      /* margin: 10px; */
+      padding: var(--dafpad);
+      list-style: none;
+    }
+/* 
+      ul li:first-child {
+      --color: rgb(135, 83, 232);
+      background-color: var(--color); } */
+     
+    /* This is a local variable */
+/* now i've mentioned color variable locally now it is changing color locally */
+  </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
+      unde obcaecati eius labore quae recusandae temporibus, corrupti tenetur
+      repellendus est quidem veniam numquam, fuga culpa beatae totam impedit
+      iste ipsam praesentium incidunt iusto? Corrupti, distinctio modi! Quis
+      pariatur fuga, fugit atque sed officiis exercitationem eaque?
+    </div>
+  </body>
+</html>

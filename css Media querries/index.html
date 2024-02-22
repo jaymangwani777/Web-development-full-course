@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media querries</title>
+    <style>
+      body {
+        background-color: red;
+      }
+      @media screen and (orientation: landscape) {
+        body{
+            border: 5px solid white;
+        }
+      }
+      /* media screen and orientation landscape is used when your width is higher than hieght 
+      media screen and orientation potrait is used when your hieght is higher than width  */
+      
+      /* What they basically do is let's see under media query orientation:landscape is given what it will do is when you reduce your width the border will be removed because orientation is landscape the border will only be shown when width is at the higher side.
+      
+      Same goes for potrait when you reduce the width of  the orientation portrait border then it will only be shown because hieght is at the higher side   */
+
+      @media only screen and (max-width: 1110px) {
+        body {
+          background-color: blue;
+        }
+        .boxes {
+          flex-direction: column;
+        }
+      }
+      .boxes {
+        display: flex;
+      }
+
+      .box {
+        width: 344px;
+        height: 344px;
+        background-color: lightblue;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      /* you can use min-width in the place of max-width also when you are using max-width it shows when you decrease width size and when you are using min-width it shows when you increase widht size! */
+    </style>
+  </head>
+  <body>
+    <div>Hey I am a red body guy!</div>
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: rgb(66, 69, 66);
+      margin: 0%;
+      /* display: flex; */
+    }
+
+    .container {
+      background-color: white;
+      height: 505px;
+      width: 400px;
+      position: relative;
+      left: 460px;
+      top: 100px;
+      border-radius: 19px;
+      margin: 5px;
+      
+    }
+    .container img {
+      height: 230px;
+      width: 380px;
+      padding: 9px;
+      /* position: relative;
+      left: 10px;
+      top: 10px; */
+      border-radius: 19px;
+     
+    }
+    /* Learning:- Try to achieve little positioning with margin and padding also like 5 or 10 pixels of it */
+
+    .capsules {
+      color: gray;
+      font-family: "Montserrat", sans-serif;
+      font-size: smaller;
+      padding: 0px 16px;
+    }
+    /* this is margin and padding of an text! */
+
+    .capsules span {
+      padding: 0px 11px;
+      border: 1px solid rgb(225, 224, 224);
+      margin: 10px;
+      border-radius: 10px;
+    }
+    /* this is margin and padding of a border  */
+
+    /* when you are using padding like this first number you are using for top bottom padding and the second number you are using for left right padding  */
+
+    /* this helps when you are using default padding you are not specifying from where exactly you want to position the element when you are specifying like padding:0px 28px; you are specifying from where exactly you want to position that element  */
+    /* 
+    #heading1 {
+      border: 1px solid gray;
+      border-radius: 8px;
+      height: 15px;
+      width: 60px;
+      position: absolute;
+      left: 25px;
+      top: 254px;
+      text-align: center;
+      padding: 2px;
+      /* font-family: 'Montserrat', sans-serif;
+      font-weight: bold }*/
+
+    /* #heading2 {
+      border: 1px solid gray;
+      border-radius: 8px;
+      height: 15px;
+      width: 60px;
+      position: absolute;
+      left: 110px;
+      top: 255px;
+      text-align: center;
+      padding: 2px;
+      /* font-family: 'Montserrat', sans-serif;
+      font-weight: bold;} */
+
+    .infohead {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 265px;
+      left: 26px;
+    }
+    .info {
+      color: rgb(87, 85, 85);
+      font-family: "Montserrat", sans-serif;
+      /* position: absolute;
+      top: 344px;
+      left: 25px; */
+      padding: 60px 25px;
+      font-size: 18px;
+    }
+    .btn {
+      /* text-align: center; */
+      position: absolute;
+      top: 449px;
+      left: 137px;
+    }
+    /* you can center it with the help of text align center also but you have to leave space use margin and padding of previous elements accordingly! */
+    .btn button {
+      border: 1px solid white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bolder;
+      color: #00559a;
+      background-color: #d4ffff;
+      padding: 10px;
+      border-radius: 25px;
+      width: 127px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .btn :hover{
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img src="/clouds-fashion-landscape-man-wallpaper-preview.jpg" alt="" />
+      <div class="capsules">
+        <span>Nature</span>
+        <span>Forest</span>
+        <!-- <div id="heading1">Nature</div>
+        <div id="heading2">Forest</div> -->
+        <!-- you can use span element it is always a good practice to write inside of a span element you can target them all by using single code of css -->
+      </div>
+      <div class="infohead">
+        <h2>lago di Braies</h2>
+      </div>
+      <div class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        alias libero sunt. Voluptate nesciunt quos debitis officia officiis.
+      </div>
+      <div class="btn">
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/clouds-fashion-landscape-man-wallpaper-preview.jpg" alt="" />
+      <div class="capsules">
+        <span>Nature</span>
+        <span>Forest</span>
+        <!-- <div id="heading1">Nature</div>
+        <div id="heading2">Forest</div> -->
+        <!-- you can use span element it is always a good practice to write inside of a span element you can target them all by using single code of css -->
+      </div>
+      <div class="infohead">
+        <h2>lago di Braies</h2>
+      </div>
+      <div class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        alias libero sunt. Voluptate nesciunt quos debitis officia officiis.
+      </div>
+      <div class="btn">
+        <button>Read More</button>
+      </div>
+    </div>
+
+  </body>
+</html>

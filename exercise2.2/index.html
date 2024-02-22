@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A navbar</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root{
+      --color: rgb(158, 94, 158);
+      --seccolor: rgb(4, 4, 4);
+      --bg-color: rgb(8, 8, 8);    
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      /* background-color: rgb(219, 57, 57); */
+      background-color: var(--bg-color);
+    }
+    .nav :hover{
+      cursor: pointer;
+       
+    }
+    .nav {
+      padding: 287px 0px;
+    }
+    .nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+
+      /* padding: 10px 0px; */
+    }
+    .nav ul li {
+      color: white;
+      font-family: "Roboto", sans-serif;
+      /* border: 1px solid black; */
+      padding: 31px 20px;
+      font-size: larger;
+      /* background-color: rgb(34, 34, 34); */
+      background-color: var(--color);
+    }
+    .nav ul li:nth-child(5) {
+      /* color: rgb(219, 57, 57); */
+      color: var(--seccolor);
+    }
+    .mclr {
+      /* color: rgb(219, 57, 57); */
+      color: var(--seccolor);
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>STYLISH <span class="mclr"> LOGO </span></li>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CLIENTS <span class="mclr"> +</span></li>
+        <li>SERVICES+</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise for css flexbox</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container {
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 26px 0px;
+    }
+    .navlogo {
+      /* border: 1px solid black; */
+      /* margin: 0px -150px; */
+    }
+    .navlogo img {
+      position: relative;
+      right: 50px;
+      padding: 0px 0px;
+      width: 173px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 45px;
+    }
+    nav ul :hover {
+      cursor: pointer;
+      color: gray;
+    }
+    nav ul li {
+      padding: 0px 20px;
+      font-size: large;
+    }
+    nav ul img {
+      width: 33px;
+    }
+    .container2 {
+      /* border: 1px solid black; */
+      margin: 105px 0px;
+      /* height: 300px; */
+    }
+    .heading {
+      text-align: center;
+      font-size: xxx-large;
+    }
+    .text {
+      text-align: center;
+      font-size: 26px;
+      padding: 25px 0px;
+    }
+    .btn {
+      text-align: center;
+    }
+    .btn button {
+      border: 1px solid white;
+      color: white;
+      background-color:  #00b6d1;
+      position: relative;
+      bottom: 103px;
+      font-size: 14px;
+      padding: 15px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navlogo">
+          <img src="/UE-Logo-1.webp" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li>Products</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+            <li>About us</li>
+            <li>security and complaince</li>
+            <img src="/Screenshot (8).png" alt="" />
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container2">
+        <div class="heading">
+          Download <strong> Ultraedit</strong> for Windows
+          <img src="/Reviews.png" alt="  " />
+        </div>
+        <div class="text">
+          Download and try Ultraedit before you buy it! This download includes
+          the full windows
+          <div id="line2">version of text editor.</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="btn">
+        <button>DOWNLOAD MAC OR LINUX VERSION</button>
+      </div>
+    </footer>
+  </body>
+</html>
