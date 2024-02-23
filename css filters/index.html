@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css filters</title>
+  </head>
+  <style>
+    .container{
+        height: 500px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+     img{
+        /* filter: blur(10px);
+        filter blur is used to blur the image  */
+        /* filter: brightness(122%);
+        filter brightness is used to change brightness of the image */
+        /* filter: brightness(100%) contrast(2);
+        you can give brightness and contrast together */
+        /* filter: grayscale(10%)
+        grayscale is mostly used to color black and white the image; */
+        /* filter: sepia(10%);
+        sepia filter yellowish the image */
+        /* filter: opacity();
+        it is same as brightness you can give 0.1 0.2 */
+     }
+    .img1 img {
+      height: 200px;
+      width: 300px;
+    }
+    .img2 img {
+        height: 200px;
+      width: 300px;
+    }
+    .img3 img {
+        height: 200px;
+      width: 300px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="img1">
+        <img
+          src="https://www.hindustantimes.com/ht-img/img/2023/05/22/1600x900/toji_fushiguro_jujutsu_kaisen_season_2_1684754085068_1684754117452.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="img2">
+        <img
+          src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/05/madara-uchiha-naruto-featured.jpg"
+          alt=""
+        />
+      </div>
+      <div class="img3">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/593/329/81/anime-death-note-l-death-note-light-yagami-wallpaper-preview.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
