@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css animations</title>
+  </head>
+  <style>
+    .container {
+      background-color: rgb(239, 155, 44);
+      height: 80vh;
+      width: 30vw;
+    }
+
+    .box {
+      width: 34px;
+      height: 45px;
+      /* background-color: aqua; */
+      /* animation-name: jaykaanimation;
+      animation-duration: 750ms; */
+      /* animation duratin means for how much time animation will run */
+      /* animation-iteration-count: 10; */
+      /* animation-iteration count means how many times you want your animation to run you can write it infinite you can give count like 1.2 and so on */
+      /* animation-delay: 3s; */
+      /* animation delay will delay the animation  */
+      /* animation-timing-function: cubic-bezier(1, 0.68, 0, 0.52); */
+      /* in timing function you can sort of change animation styles little sort of  */
+      /* animation-direction: reverse; */
+      /* you can give direction to your animation */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* short form of all the properties you have to fill in! */
+      animation: jaykaanimation 4s ease-in 3s 10 ,jay2 4s ease-in-out 2s 10;
+      /* we can use multiple animation by using coma  */
+    }
+
+    @keyframes jaykaanimation {
+      from {
+        /* transform: translateX(0); */
+        background-color: red;
+      }
+      to {
+        transform: translateX(1000px);
+        background-color: yellow;
+      }
+    }
+/* you can use multiplle animations in same element also and different elements too! */
+    @keyframes jay2 {
+      0% {
+        transform: rotate(100deg);
+      }
+      20% {
+        transform: rotate(200deg);
+      }
+      50% {
+        transform: rotate(300deg);
+      }
+      80% {
+        transform: rotate(400deg);
+      }
+      100% {
+        transform: rotate(500deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">box</div>
+    </div>
+  </body>
+</html>
