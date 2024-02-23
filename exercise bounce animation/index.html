@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bounce animation</title>
+  </head>
+  <style>
+    .container {
+      background-color: blue;
+      height: 80vh;
+      width: 80vw;
+      position: relative;
+    }
+    .box {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: red;
+      border-radius: 100px;
+      animation: animateX 3s ease-out infinite,  
+      animateY 1s linear infinite alternate;
+      /* the timing functions have a huge impact on creating animations 
+      linear timing function have a constant time and ease out timing fuctions moves quicly at the start but come back slowly at the end! */
+    }
+
+    @keyframes animateX {
+      from {
+        /* left: 10%; */
+        left: 0%;
+      }
+      to {
+        left: 100%;
+        /* left: 100%; */
+      }
+    }
+    @keyframes animateY {
+      from {
+        bottom: 0%;
+      }
+      to {
+        bottom: 40%;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
