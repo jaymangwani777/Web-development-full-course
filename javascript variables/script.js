@@ -42,6 +42,7 @@ b= b+2
 
 {
 let a=72
+a=a+10
 // var  a=72;
 console.log(a)
 // var is a globall scope variable thats why it is printing the same dosen't matter we put it under the block or outside the block
@@ -77,5 +78,8 @@ let o = {
 }
 
 console.log(o);
-o.salary = "500crores";
+o.salary = "500crores"; 
 console.log(o);
+o.name = "jayesh"
+console.log(o);
+ 
