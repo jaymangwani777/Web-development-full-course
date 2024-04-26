@@ -19,5 +19,5 @@ else{
 document.title = "Hey i am good"
 // you can change title by using Js like this
 
-document.body.style.backgroundColor="red"
+document.body.style.backgroundColor="red"   
 // you can change color or add styling by using javascript like this 

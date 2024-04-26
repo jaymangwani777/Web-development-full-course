@@ -10,6 +10,8 @@ console.log("hey this is tutorial 2 of javascript")
 var c="Jay"
 // variable is basically a container which stores datatypes and value inside double coat is a string
 // double coma means double coat and inside double coat value is a string 
+// string means collection of characters 
+
 
 // console.log(a+b)
 
@@ -25,6 +27,7 @@ var c="Jay"
 // var 55a="jay"
 // that is incorrect 
 // and why they are correct and incorrect just because it is a rule var cannot be begin with variables
+// for example variables are numbers
 
 // jay and Jay both are different variables because starting of names is differennt first one is starting with small letter and the second one is starting with a capital letter variables are case sensitive!
 // var b=9;
@@ -34,6 +37,12 @@ var c="Jay"
 
 // const a1= 6;
 // a1= a1 +1; not allowed because a1 is constant
+// a1 we cannot change a1 value because it is under const which means it is constant 
+// if we write like this var=a1=5 then we can change the value by for example :a1+6 ,a1-6, etc
+// we cannot change a constant value
+
+ 
+
 
 var a=5;
 let b=6;
@@ -49,12 +58,23 @@ console.log(a)
 // let is a block scope variable thats why it is printing only what is under block outside the block dosen't matter for it! 
 }
 
+{
+    let a=67
+    a=a+76
+    console.log(a)
+}
+// we can print let variale multiple times by the same name
 console.log(a)
+
+{
+    let b=45
+    b=b+45
+    console.log(b)
+}
 
  {
 console .log(b)
  }
-
  let x="jay bhai"
  let y=8;
  let z=78;
@@ -62,6 +82,8 @@ console .log(b)
  let p=undefined;
  let q=null;
  const s= true;
+
+  
 
  console.log(x,y,z,r,p,q,s)
  console.log(typeof x,typeof y,typeof z,typeof r,typeof p,typeof q, typeof s)
@@ -77,9 +99,12 @@ let o = {
     "is_handsome": true
 }
 
+// these are objects we write objects write this 
+
+
 console.log(o);
 o.salary = "500crores"; 
 console.log(o);
-o.name = "jayesh"
-console.log(o);
+// o.name = "jayesh"
+// console.log(o);
  
