@@ -98,13 +98,16 @@ let o = {
     "salary"  :"100crores", 
     "is_handsome": true
 }
-
+                //  ^  
+                //  |   
 // these are objects we write objects write this 
 
-
+// if we want to change objects we can change them like this
+                // |  
+                // -
 console.log(o);
 o.salary = "500crores"; 
 console.log(o);
-// o.name = "jayesh"
-// console.log(o);
+o.name = "jayesh"
+console.log(o);
  
