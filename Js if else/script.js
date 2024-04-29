@@ -1,8 +1,8 @@
 console.log("hello i am conditional tutorial!")
 
 
-let age=9;
-let grace= 2;
+let age=2;
+// let grace= 2;
 
 // These are javascript assignment operators!
 // age=grace
@@ -24,13 +24,25 @@ let grace= 2;
 // console.log(age%grace)
 // modulus what it will do it it will devide both the numbers and the remainder will be the modulus.
 
-if((age+grace)>18) {
+if((age==18)) {
     console.log("you can drive");
+}
+
+else if((age==0)){
+    console.log("are you kidding")
+}
+
+else if((age!=1)){
+    console.log("are you fucking out of your mind")
 }
 
 else{
     console.log("you cannot drive");
 }
+
+// ^
+// |
+// this is the if else if else ladder that will execude only one code it will check first one if it is false then it will move on to the second code if second one is also false then it will move on to the third!
 
 // let aage=44;
 
@@ -42,3 +54,16 @@ else{
 //     console.log("you can drive")
 // }
 
+a=6
+b=8
+c= a>b ?(a-b):(b-a)
+
+/*
+translates to
+if (a>b){
+    let c=a-b
+}
+else{
+    let c=b-a
+}
+/*
