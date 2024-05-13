@@ -54,16 +54,9 @@ else{
 //     console.log("you can drive")
 // }
 
-a=6
-b=8
-c= a>b ?(a-b):(b-a)
+a=6;
+b=8;
+c= a>b ?(a-b):(b-a);
+console.log(c);
 
-/*
-translates to
-if (a>b){
-    let c=a-b
-}
-else{
-    let c=b-a
-}
-/*
+ 

@@ -94,7 +94,11 @@
     background-color: rgb(44, 44, 44);
     position: relative;
   }
-
+.screenwraper{
+  position: relative;
+  top: 0;
+  left: 0;
+}
   .btnflex {
     height: 10vh;
     display: flex;
@@ -150,7 +154,7 @@ z-index: 10;
 
   .main2 video {
     position: absolute;
-    right: 20%;
+    right: 14%;
     top: 20%;
     max-width: 328px;
   }
@@ -165,6 +169,24 @@ z-index: 10;
   .sepration2 {
     height: 10px;
     background-color: rgb(44, 44, 44);
+  }
+  .main3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+  }
+  .main3 img{
+    width: 40vw;
+  }
+  .main3text {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+      sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   @media only screen and (max-width: 614px) {
     .btnflex {
