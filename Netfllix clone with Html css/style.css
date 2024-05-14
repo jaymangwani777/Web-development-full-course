@@ -170,15 +170,20 @@ z-index: 10;
     height: 10px;
     background-color: rgb(44, 44, 44);
   }
+  .sepration3 {
+    height: 10px;
+    background-color: rgb(44, 44, 44);
+    /* position: relative; */
+  }
   .main3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    /* color: white; */
     flex-wrap: wrap;
   }
   .main3 img{
-    width: 40vw;
+    width: 490px;
   }
   .main3text {
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
@@ -187,7 +192,71 @@ z-index: 10;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    color: white;
   }
+  .main3text > :first-child {
+    font-size: 44px;
+    font-weight: bolder;
+  }
+  .main3text > :nth-child(2) {
+    font-size: 44px;
+    font-weight: bolder;
+  }
+  .main3text > :nth-child(3) {
+    font-size: 44px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+  }
+  /* .main4{
+    display: flex;
+  }
+
+  .main4 video{
+    position: absolute;
+    bottom: -229%;
+    right: 13%;
+    max-width: 356px;
+    position: relative;
+  } */
+  .main4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .main4text {
+    margin-bottom: 20px;
+  }
+  
+  .screenwraper3 {
+    position: relative;
+  }
+  
+  .screenwraper3 img {
+    width: 100%;
+    max-width: 600px; /* Adjust the size as necessary */
+    position: relative;
+    z-index: 10;
+  }
+  
+  .screenwraper3 video {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 370px;
+    z-index: 1;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .main4 {
+      flex-direction: column;
+    }
+  }
+  
   @media only screen and (max-width: 614px) {
     .btnflex {
       display: flex;
@@ -229,6 +298,11 @@ z-index: 10;
 
   } @media only screen and (max-width: 1864px)  {
     .main2text {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 1000px){
+    .main3text{
       text-align: center;
     }
   }
