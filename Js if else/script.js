@@ -20,7 +20,7 @@ let age=2;
 // console.log(age*grace)
 // multiplication
 // console.log(age**grace)
-// exponentitation what it will do is the first number will remain a normal number but the second number will convert into the power of first number
+// exponentitation operator what it will do is the first number will remain a normal number but the second number will convert into the power of first number
 // console.log(age%grace)
 // modulus what it will do it it will devide both the numbers and the remainder will be the modulus.
 
@@ -54,9 +54,21 @@ else{
 //     console.log("you can drive")
 // }
 
+/*
+I am a multiline comment!
+*/
+
 a=6;
 b=8;
 c= a>b ?(a-b):(b-a);
 console.log(c);
 
- 
+/*
+// translates to 
+// if(a>b) {
+    let c =(a-b)
+}
+// else {
+    let c=(b-a)
+}
+*/
