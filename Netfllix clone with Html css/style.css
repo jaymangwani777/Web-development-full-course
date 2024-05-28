@@ -311,6 +311,7 @@ z-index: 10;
   .main5text > :first-child {
     font-size: 35px;
     font-weight: bolder;
+    padding-bottom: 6px;
   }
 
   .main5text > :nth-child(2) {
