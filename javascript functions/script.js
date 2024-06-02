@@ -16,6 +16,10 @@ function changename(name) {
 
 changename("disha")
 
+changename("jay")
+
+ 
+
 
 // why we are using funcition?
 
@@ -25,9 +29,41 @@ changename("disha")
 
 // the answer is we have to make a function after we made the function we can make changes in that function then the 1000 lines of code will change automatically!
 
-function sum(a,b) 
-{ console.log(a+b);
-    
+function sum(a,b,c=15) 
+{
+    //  console.log(a+b);
+return a+b+c
 }
 
-sum(3, 5)
+result1= sum(3, 5)
+result2= sum(3, 8)
+result3= sum(3, 7)
+result4= sum(3, 3, 5)
+
+console.log("the sum of these numbers is ",result1)
+console.log("the sum of these numbers is ",result2)
+console.log("the sum of these numbers is ",result3)
+console.log("the sum of these numbers is ",result4)
+
+// in this code what we are doing is we are defining result 
+// we have to add return because it will define result value
+
+
+// function sum(x,y,q) {
+//     return x+y+q
+// }
+
+// result=sum(10,45,10)
+// console.log("the sum of these numbers is",result)
+
+
+// Arrow function
+    // |  
+
+const func1= (x)=> {
+    console.log("i am an arrow function",x)
+}
+
+func1(55);
+func1(66);
+func1(77);

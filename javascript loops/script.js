@@ -28,21 +28,27 @@ let a=2;
       
     // }
 
-//     let obj= {
-//       name: "jay",
-//       role:"programmer",
-//       company : "codewithharryAI"
-//     }
-//   // this is for in loop
-//  for (const key in obj) {   
-//     console.log(key,)
-//   }
+    let obj= {
+      name: "jay",
+      role:"programmer",
+      company : "codewithharryAI"
+    }
+  // this is for in loop
+ for (const key in obj) {   
+    console.log(key,)
+  }
+
+//   forin loop is for object key and element
  
 //   // this is for of loop
 //   for (const character of "jay") {
 //     console.log(character)
     
 //   }
+ 
+for (const c of "jay") {
+    console.log(c)
+}
 
 // let i =5;
 // while (i<6) {
