@@ -109,5 +109,7 @@ console.log(o);
 o.salary = "500crores"; 
 console.log(o);
 o.name = "jayesh"
+console.log(o); 
+o.is_handsome= false
 console.log(o);
  
