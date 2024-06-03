@@ -14,7 +14,7 @@ console.log("this is the practice of javascript that i am doing");
 
 let number=18
 
-if(number % 3 === 0|| number %2===0){
+if(number % 3 === 0|| number % 2===0){
   console.log("the number is divisible")
 }
 

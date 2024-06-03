@@ -44,15 +44,15 @@ else{
 // |
 // this is the if else if else ladder that will execude only one code it will check first one if it is false then it will move on to the second code if second one is also false then it will move on to the third!
 
-// let aage=44;
+let aage=44;
 
-// if(aage<45){
-//     console.log("you cannot drive")
-// }
+if(aage<45){
+    console.log("you cannot drive")
+}
 
-// else{
-//     console.log("you can drive")
-// }
+else{
+    console.log("you can drive")
+}
 
 /*
 I am a multiline comment!
