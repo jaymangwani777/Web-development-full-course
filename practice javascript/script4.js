@@ -53,18 +53,12 @@ if (year % 4 === 0 || year % 400 === 0) {
 
 let numberr = -5;
 
-if(numberr>0){
-    console.log("the number is positive")
-}
-
-else if(numberr<0){
-    console.log("the number is negative")
-}
-
-else{
-    console.log(
-        "the number is zero"
-    )
+if (numberr > 0) {
+  console.log("the number is positive");
+} else if (numberr < 0) {
+  console.log("the number is negative");
+} else {
+  console.log("the number is zero");
 }
 
 // ternary opertor
@@ -78,24 +72,79 @@ else{
 
 //     console.log(outputt);
 
-
 // Write a program that classifies a person into different age groups.
 
-let age= 61;
+let age = 61;
 
-if ((age>0)&&(age<=12)){
-console.log("the person is child")
+if (age > 0 && age <= 12) {
+  console.log("the person is child");
+} else if (age > 12 && age <= 25) {
+  console.log("the person is young");
+} else if (age > 25 && age <= 60) {
+  console.log("the person is adult");
+} else {
+  console.log("the person is old");
 }
 
-else if((age>12)&&(age<=25)){
-    console.log("the person is young")
+// Write a program that performs basic arithmetic operations based on user input.
+
+
+let a = 1500
+let b = 44
+let operation="add" 
+
+
+if (operation=="add"){
+  console.log(a+b)
 }
-else if((age>25)&&(age<=60)){
-    console.log("the person is adult")
+
+else if(operation=="multiply"){
+  console.log(a*b)
 }
-else {
-    console.log("the person is old")
+
+else if(operation=="devide"){
+  if (b!==0){
+    console.log(a/b)
+  }
+  else{
+    console.log("the number is not divisible")
+  }
+}
+
+else if(operation=="subtraction"){
+  console.log(a-b)
+}
+
+else{
+  console.log("the input is invalid")
 }
 
 
+// this is the basic calculater
+
+// Write a program that prints the day of the week based on a number input (1 for Monday, 2 for Tuesday, etc.).
+
+let day = 7
+
+if (day==1){
+  console.log("monday")
+}
+else if(day==2){
+  console.log("Tuesday")
+}
+else if(day==3){
+  console.log("Wednasday")
+}
+else if(day==4){
+  console.log("thursday")
+}
+else if(day==5){
+  console.log("Friday")
+}
+else if(day==6){
+  console.log("Saturday")
+}
+else if(day==7){
+  console.log("Sunday")
+}
 
