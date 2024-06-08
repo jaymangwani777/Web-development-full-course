@@ -64,6 +64,6 @@ const func1= (x)=> {
     console.log("i am an arrow function",x)
 }
 
-func1(55);
+func1(2);
 func1(66);
 func1(77);
