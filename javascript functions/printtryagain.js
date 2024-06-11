@@ -20,7 +20,7 @@ do {
     else(
         alert("try again")
     )
-} while (usernumber!=correctnumber );
+} while (usernumber!=correctnumber);
 
 // this loop runs till usernumber is not equal to correctnumber it is gonna give alert try again try again until the number is correct;
 // when number is correct it stops

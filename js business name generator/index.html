@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+        let random= Math.random();
+        // we have to devide random into 4 parts
+        // 0 0.33 0.66 1
+        // this is the breakdown of 0.1 into four parts
+        // o to 0.33 to 0.66 to 1
+        let first,second,third ;
+
+        // this will generate first word
+
+        if(random<0.33){
+            first ="crazy"
+        }
+
+        else if(random<0.66 && random>=0.33){
+            first ="Amazing"
+        }
+
+        else { 
+            first ="fire"
+        }
+
+        // this will generate second word
+
+        
+        if(random<0.33){
+            second ="Engine"
+        }
+
+        else if(random<0.66 && random>=0.33){
+            second ="Foods"
+        }
+
+        else{
+            second ="Garments"
+        }
+
+        // this will generate third word
+        if(random<0.33){
+            third ="bros"
+        }
+
+        else if(random<0.66 && random>=0.33){
+            third ="limited"
+        }
+
+        else{
+            third ="Hub"
+        }
+
+        console.log(`${first} ${second} ${third}`)
+
+     
+// Creat a business name generator by combining list of adjectives and shop name and another word
+
+// Adjectives:
+// Crazy
+// Amazing
+// Fire
+
+// Shop name
+
+// Engine
+// Foods
+// Garments
+
+// Another Word:
+// Bros
+// Limited
+// Hub
+
+
+// let firstword = "amazing"
+// let secondword = "garments"
+// let thirdword = "hub"
+
+// if(firstword,secondword,thirdword){
+//     console.log(`${firstword}  ${secondword}  ${thirdword}`)
+// }
+
+// else{
+//     console.log(error404);
+// }
+
+// if(secondword){
+//     console.log(`${secondword}`)
+// }
+// if(thirdword){
+//     console.log(`${thirdword}`)
+// }
+
+// else{
+//     console.log(error404);
+// }
+  </script>
+  <body></body>
+</html>
+
+ 
