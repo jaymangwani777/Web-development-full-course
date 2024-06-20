@@ -79,3 +79,14 @@ return e**2
 })
 
 console.log(newarr);
+
+// use reduce to calculate factorial of a given number from an array of first n natural numbers (n bieng the number whose factorial needs to be calculated);
+
+
+let arr2=[n=7,x=5,y=3,d=4];
+
+const factorial=(n)=>{
+
+}
+
+

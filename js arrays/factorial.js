@@ -35,3 +35,25 @@ console.log(factorialRecursive(5)); // Output: 120
 // The result 2 is returned to factorialRecursive(3), making the calculation 3 * 2 = 6.
 // The result 6 is returned to factorialRecursive(4), making the calculation 4 * 6 = 24.
 // The result 24 is returned to factorialRecursive(5), making the calculation 5 * 24 = 120.
+
+
+function factorialiterative(j){
+    if(j<0){
+        return "factorial is not defined for negative numbers"
+    }
+ 
+let result=1
+for (let i = 1; i <=j ; i++) {
+ result *=i;      
+     
+}
+
+return result;
+}
+
+console.log(factorialiterative(5));
+
+// this is finding factorial by using for loop!
+
+
+ 

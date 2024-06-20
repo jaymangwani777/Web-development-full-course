@@ -48,3 +48,4 @@ console.log(arr2.reduce(fuck));
 // console.log("jay");
 
 // this is how you convert string to js
+
