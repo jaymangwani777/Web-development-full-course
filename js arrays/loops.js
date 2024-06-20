@@ -35,6 +35,6 @@ for (const key in obj) {
     }
 }
 
-for (const iterator of a) {
-    console.log(iterator);
-}
+// for (const iterator of a) {
+//     console.log(iterator);
+// }
