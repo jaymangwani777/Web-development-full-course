@@ -44,3 +44,5 @@ console.log(b.replace("shivam", "jay"))
 console.log(b.concat(a, "Nikita", "person",))
 // this is the easy way of concatinating of something
 
+console.log("jay mangwani")
+

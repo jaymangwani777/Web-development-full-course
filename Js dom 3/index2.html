@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ancestor">
+        <div class="parent">
+             <div class="child"id="myelement">child</div>
+        </div>
+    </div>
+    <script>
+       let element= document.getElementById("myelement");
+       let closestancestor= element.closest("#myelement");
+       console.log(closestancestor);
+    </script>
+    <!-- In JavaScript, the Element.closest() method is used to find the nearest ancestor of the current element (or the element itself) that matches a specified CSS selector. It starts from the element itself and traverses up the DOM tree until it finds a matching element or reaches the root of the tree. -->
+</body>
+</html>

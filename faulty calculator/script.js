@@ -30,7 +30,7 @@
 // In JavaScript, Math.random() is a method that returns a pseudo-random floating-point number in the range from 0 (inclusive) to 1 (exclusive). This means the value returned will be greater than or equal to 0 but less than 1.
 
 // To get a random number within a specific range, you can scale and shift the value. For example, to get a random number between 0 and 10, you would multiply the result by 10:
-let random =Math.random();
+let random =Math.random() *10;
 console.log(random)
 let a = prompt("enter first number")
 let c = prompt("enter operation")
