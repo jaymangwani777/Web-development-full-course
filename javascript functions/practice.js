@@ -5,8 +5,7 @@ let studentmarks={
 }
 
 for (let studentname in studentmarks) {
-    console.log(studentname+":"+ studentmarks[studentname]);
-     
+    console.log(studentname+":"+ studentmarks[studentname]); 
 }
  
 
@@ -41,6 +40,6 @@ function findMean(a = 0, b = 0, c = 0, d = 0, e = 0, ) {
 
 // Example usage
 console.log(findMean(4, 8, 15, 16, 23, 27,));  // This will print 13.2
-console.log(findMean(1, 2, 3, 4, 5));     // This will print 3
+console.log(findMean(1, 2, 3, 4, 5));          // This will print 3
 console.log(findMean(4,5,6));                  // This will print 0 (using default values)
 

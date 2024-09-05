@@ -5,7 +5,7 @@ let a=[1,93,5,6,88];
 //     console.log(element);
     
 // }
-
+    
 // this is classicall for loop in array;
 
 

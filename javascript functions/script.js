@@ -14,7 +14,7 @@ function changename(name) {
 
 // in the place of name we have concadinated the string that's how we concadinate the string ! string is which is inside the double cote it is mandatory to concadinate the string for making a function or writing a function as we can say!
 
-changename("disha")
+changename("career")
 
 changename("jay")
 

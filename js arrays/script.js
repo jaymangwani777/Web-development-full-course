@@ -29,7 +29,7 @@ console.log(x.pop());
 
 // this will pop out the last value of an array that means it will return us the last value!
 
-console.log(x.push("jay"));
+console.log(x.push("jay","harry"));
 // this will add one more array to and end of an array as well as it will update its length;
 
 console.log(arr.shift());
@@ -55,6 +55,10 @@ let d =[8,5,4];
 console.log(d);
 // delete d[0];
 // it will delete the element based on index!
+
+let numbers=[1,2,3,4,5];
+console.log(numbers.splice(1,3));
+// what splice will do is first you give number it will start from that number then you write how many numbers you want to remove from that specific location example 4 so it will remove 4 numbers after 5 in this method you can add numbers also once you wrote the numbers you want to remove then you can write numnbers you want to add one by one they could be numbers they could be letters as well!
 
 
 // let j=[5,6,7];

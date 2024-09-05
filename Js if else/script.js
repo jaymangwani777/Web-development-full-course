@@ -58,7 +58,7 @@ else{
 I am a multiline comment!
 */
 
-a=6;
+a=9;
 b=8;
 c= a>b ?(a-b):(b-a);
 console.log(c);

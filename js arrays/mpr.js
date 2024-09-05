@@ -31,8 +31,6 @@ const greaterthanseven= (e)=>{
 console.log(arr.filter(greaterthanseven));
 
 // this filter function is used when you want something specific from your elements under the array!
-
-
 // reduce method;
 
 let arr2=[1,2,3,4,5,6];
@@ -44,8 +42,6 @@ const fuck=(a,b)=>{
 console.log(arr2.reduce(fuck));
 
 // array.from("jay");
-
 // console.log("jay");
-
 // this is how you convert string to js
 

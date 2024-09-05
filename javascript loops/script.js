@@ -10,12 +10,10 @@ let a=2;
  
 // for (let i = 0; i < 100; i++) {
 //   console.log(a + i);
-  
 // }
 
 // for (let i = 0; i < 1000 ; i++) {
 //   console.log(a+i);
-  
 // }
 
 
@@ -47,7 +45,7 @@ let a=2;
 //   }
  
 for (const c of "jay") {
-    console.log(c)
+    console.log(c)  
 }
 
 // let i =5;
