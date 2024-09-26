@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 34px;
+            width: 40px;
+            margin: 34px;
+            padding: 34px;
+            border: 2px solid black;
+        }
+    </style>
+
+     
+</head>
+<body>
+    <div class="container">
+        <div class="box">bhupendra jogi</div>
+        <div class="box">bhupendra jogi</div>
+        <div id="redbox" class="box">bhupendra jogi</div>
+        <div class="box">bhupendra jogi</div>
+        <div class="box">bhupendra jogi</div>
+    </div>
+    <script>console.log("jay");
+
+        // let boxes = document.getElementsByClassName("box")
+        // console.log(boxes);
+        
+        // boxes[2].style.backgroundColor ="red"
+        
+        // document.getElementById("redbox").style.backgroundColor="red" 
+
+        // document.querySelector(".box").style.backgroundColor="red";
+        console.log(document.querySelectorAll(".box"))
+        document.querySelectorAll(".box").forEach(e =>{
+            e.style.backgroundColor="red"
+        })
+//         document.querySelector(".container").contains(2[3])
+// false
+// document.querySelector(".container").contains(e[3])
+
+// true
+// document.querySelector(".container").contains(document.querySelector("body"))
+// false
+        </script>
+</body>
+</html>
